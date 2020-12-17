@@ -1,0 +1,8 @@
+include ':common'
+include ':mine'
+include ':course'
+include ':login'
+include ':study'
+include ':home'
+include ':app'
+rootProject.name = "JetPackStudy"

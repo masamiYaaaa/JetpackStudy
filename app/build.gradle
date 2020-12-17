@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+//apply from: '../dependencies.gradle'
+apply {
+    from '../dependencies.gradle'
+}
+
+android {
+    defaultConfig {
+        applicationId "com.going.jetpackstudy"
+    }
+
+}
+dependencies {
+    implementation project(path: ':common')
+    implementation project(path: ':login')
+    implementation project(path: ':mine')
+    implementation project(path: ':course')
+    implementation project(path: ':home')
+    implementation project(path: ':study')
+}
