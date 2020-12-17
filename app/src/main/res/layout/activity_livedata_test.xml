@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_activity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Activity接收到的值:" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_map_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="ActivityMap接收到的值:" />
+
+        <FrameLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:background="@color/cardview_dark_background"
+            />
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:text="显示Fragment"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_hide"
+            android:layout_width="wrap_content"
+            android:text="隐藏Fragment"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_get_data"
+            android:layout_width="wrap_content"
+            android:text="获取数据"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="wrap_content"
+            android:text="One"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="wrap_content"
+            android:text="Two"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
