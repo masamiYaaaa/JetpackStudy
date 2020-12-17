@@ -1,3 +1,3 @@
-# JetpackStydy
+# JetpackStudy
 
 En
