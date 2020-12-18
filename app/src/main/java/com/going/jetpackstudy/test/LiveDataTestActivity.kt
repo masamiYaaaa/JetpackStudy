@@ -1,8 +1,9 @@
-package com.going.jetpackstudy
+package com.going.jetpackstudy.test
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.*
+import com.going.jetpackstudy.R
 import kotlinx.android.synthetic.main.activity_livedata_test.*
 
 /**

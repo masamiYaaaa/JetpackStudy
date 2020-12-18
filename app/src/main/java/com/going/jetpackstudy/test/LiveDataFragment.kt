@@ -1,15 +1,14 @@
-package com.going.jetpackstudy
+package com.going.jetpackstudy.test
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.map
+import com.going.jetpackstudy.R
 import kotlinx.android.synthetic.main.fragment_livedata.*
 
 class LiveDataFragment : Fragment() {

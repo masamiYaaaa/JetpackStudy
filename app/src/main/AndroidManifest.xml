@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LiveDataTestActivity" />
+        <activity android:name=".test.LiveDataTestActivity" />
+        <activity android:name=".test.ViewModelTestActivity" />
+        <activity android:name=".test.DataBindingTestActivity" />
 
 
     </application>

@@ -26,9 +26,17 @@ android {
         }
     }
 
-    dataBinding {
-        enabled true
+
+//使用databinding因为下面的原因 所以写成下面的方式 ,原因是因为AS4.1版本推荐下面的方式 4.0的无所谓
+//DSL element 'android.dataBinding.enabled' is obsolete and has been replaced with 'android.buildFeatures.dataBinding'.
+//    dataBinding {
+//        enabled true
+//    }
+
+    buildFeatures {
+        dataBinding true
     }
+
 
     compileOptions {
         sourceCompatibility = 1.8
@@ -41,8 +49,6 @@ android {
 }
 
 dependencies {
-
-
 
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -71,7 +77,6 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
-
 
 
     kapt "androidx.lifecycle:lifecycle-common-java8:2.2.0"
