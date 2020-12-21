@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -9,11 +10,17 @@
         <variable
             name="user"
             type="com.going.jetpackstudy.test.UserData" />
+
         <variable
             name="changeUserData"
             type="View.OnClickListener" />
 
-
+        <variable
+            name="changeUserDataNull"
+            type="View.OnClickListener" />
+        <variable
+            name="adapter"
+            type="androidx.recyclerview.widget.RecyclerView.Adapter" />
 
     </data>
 
@@ -68,7 +75,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:onClick="@{changeUserDataNull}"
                 android:text="改变UserData为Null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/cardview_dark_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="列表测试" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                adapter="@{adapter}"
+                android:orientation="vertical"
+                tools:listitem="@layout/item_databinding_test"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="10" />
+
 
         </LinearLayout>
 

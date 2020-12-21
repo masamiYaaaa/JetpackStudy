@@ -19,15 +19,20 @@ class DataBindingTestActivity : AppCompatActivity() {
             R.layout.activity_databinding_test
         )
         val userModel: UserModel by viewModels { defaultViewModelProviderFactory }
-
-        var userData = UserData("李四", 23, "日本富士山")
+        var userData = UserData("李四", 23, "日本富士山",0)
 //        user.name = null
-
         binding.apply {
             user = userData
             changeUserData = View.OnClickListener {
+                user = userData
                 user?.name = "刻晴"
+                user?.address="蒙德城"
             }
+            changeUserDataNull=View.OnClickListener {
+                user = null
+
+            }
+            adapter=DataBindingTestAdapter()
 
         }
 

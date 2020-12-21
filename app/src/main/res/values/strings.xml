@@ -5,4 +5,7 @@
     <string name="title_notifications">Notifications</string>
 
     <string name="user_name">姓名:  %s</string>
+
+    <string name="item_user">姓名:  %s    年龄:  %s</string>
+
 </resources>
