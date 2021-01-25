@@ -58,7 +58,7 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7"
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation("androidx.core:core-ktx:1.2.0")
+    implementation("androidx.core:core-ktx:1.3.0")
     implementation 'androidx.fragment:fragment-ktx:1.2.4'
     implementation 'androidx.activity:activity-ktx:1.1.0'
     implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta6"
@@ -70,7 +70,7 @@ dependencies {
 
     //</edit-folder>
 
-    //region jetPack libs
+    //region jetPack libs  可以注释掉 新版appcompat已经依赖,此处保留为了保证版本一致性
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-livedata:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'

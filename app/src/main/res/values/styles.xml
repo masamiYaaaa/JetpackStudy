@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="SplashDance">
+
+        <attr name="logoTextName" format="string"/>
+        <attr name="logoTextSize" format="dimension"/>
+        <attr name="logoTextPadding" format="integer"/>
+        <attr name="logoTextColor" format="color"/>
+        <attr name="logoLightColor" format="color"/>
+        <attr name="logoTextDanceDuration" format="integer"/>
+
+
+
+
+    </declare-styleable>
+
+</resources>
